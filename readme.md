@@ -1,11 +1,11 @@
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-  # title
+  # Readme generator
   
   ## Description 
 
-  description
+  This is a node.js CLI aplication to generate a readme.md file for the GitHub Repository.
   
   ## Table of Contents
   * [Installation](#installation)
@@ -16,23 +16,23 @@
   
   ## Installation
   
-  installation
+  Git pull project locally, open your terminal and cd into the project. Run npm install. (make sure you have node.js installed prior to that)
 
   ## Usage 
   
-  deployment
+  Open the terminal in project directory and run "node index.js"
 
   ## Contributing
   
-  contribuion
+  Check for any open issues and submit a pull request in sulution is found.
 
   ## Tests
   
-  how to test my project
+  As of now, just download and try it yourself.
 
   ## License
   
-  Apache License 2.0
+  The Unlicense
   
   ---
   
@@ -40,7 +40,6 @@
 
   For any questions, please contact me :
  
-  GitHub: [@hithubUser](https://api.github.com/users/hithubUser)
-  email: [@myemail@gmail.com](myemail@gmail.com)
-
+  GitHub: [@PavsterUK](https://api.github.com/users/PavsterUK)
+  email: [@pavelnaumovic@gmail.com](pavelnaumovic@gmail.com)
 
