@@ -43,5 +43,5 @@
   For any questions, please contact me :
  
   GitHub: [@PavsterUK](https://api.github.com/users/PavsterUK)
-  email: [@pavelnaumovic@gmail.com](pavelnaumovic@gmail.com)
+  email: [pavelnaumovic@gmail.com](pavelnaumovic@gmail.com)
 
