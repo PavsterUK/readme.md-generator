@@ -34,7 +34,6 @@ function initQuestions() {
   });
 
   promise.then(() => {
-    console.log(data);
     const markdown = generateMarkdown(data);
     writeToFile("readme", markdown);
   });
