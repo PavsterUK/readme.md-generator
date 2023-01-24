@@ -1,8 +1,15 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+const lic = require("./licenses");
 
+// function to generate markdown for README
+
+function generateMarkdown(data) {
+  const licenseIndex = +data.license[0];
+
+  return `
+  ${lic.licenses[licenseIndex][1]}
+
+  # ${data.title}
+  
   ## Description 
 
   ${data.description}
@@ -32,7 +39,7 @@ function generateMarkdown(data) {
 
   ## License
   
-  ${data.license}
+  ${lic.licenses[licenseIndex][0]}
   
   ---
   
@@ -40,7 +47,8 @@ function generateMarkdown(data) {
 
   For any questions, please contact me :
  
-  GitHub: [@PavsterUK](https://api.github.com/users/PavsterUK)
+  GitHub: [@${data.user}](https://api.github.com/users/${data.user})
+  email: [@${data.email}](${data.email})
 
 `;
 }

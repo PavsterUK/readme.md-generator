@@ -32,14 +32,23 @@ function initQuestions() {
       })
     );
   });
+
   promise.then(() => {
+    console.log(data);
     const markdown = generateMarkdown(data);
-    console.log(markdown);
+    writeToFile("readme", markdown);
   });
 }
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(`./${fileName}.md`, data, function (err) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log(`The file ${fileName} was saved in ./${fileName}.md !`);
+  });
+}
 
 // function to initialize program
 function init() {

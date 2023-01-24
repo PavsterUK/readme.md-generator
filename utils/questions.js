@@ -1,3 +1,5 @@
+const licenses = require("./licenses");
+
 exports.questions = [
   { type: "input", name: "title", message: "What is a title of your project?" },
   {
@@ -20,19 +22,21 @@ exports.questions = [
     name: "contributing",
     message: "Please tell how people can contribute to your project.",
   },
+  {
+    type: "input",
+    name: "user",
+    message: "What is your GutHub User name?.",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
   { type: "input", name: "tests", message: "How to test your project?" },
   {
     type: "list",
     name: "license",
     message: "What licence would your project have?",
-    choices: [
-      "MIT License",
-      "GNU General Public License (GPL)",
-      "Apache License 2.0",
-      "GNU Lesser General Public License (LGPL)",
-      "BSD 2-Clause License",
-      "Mozilla Public License 2.0",
-      "The Unlicense",
-    ],
+    choices: licenses.listLicenses(),
   },
 ];
